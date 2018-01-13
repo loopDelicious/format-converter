@@ -1,7 +1,8 @@
 var expect = require('expect.js'),
     Swagger2Postman = require('./convert.js'),
     fs = require('fs'),
-    path = require('path');
+    path = require('path'),
+    request = require('request');
 
 // convert your Swagger 2.0 files to Postman 1.0
 function handleConversion() {
@@ -29,4 +30,34 @@ function handleConversion() {
     });
 }
 
-handleConversion();
+// handleConversion();
+
+function getUpdateCollection(collection) {
+
+    // set an environment variable to store your sensitive info
+    var postmanAPIKey = process.env.postmanKey;
+
+    var putOptions = {
+        method: 'PUT',
+        url: `https://api.getpostman.com/collections/${collection_uid}`,
+        headers: {
+            'Postman-Token': 'b49bbebf-434c-2559-d0a7-7e7b0a2af45e',
+            'Cache-Control': 'no-cache',
+            'X-Api-Key': postmanAPIKey,
+            'Content-Type': 'application/json'
+        },
+        body: body, // TODO: pull from a new folder for updated swagger files
+        json: true
+    };
+
+    request(putOptions, function (error, response, body) {
+        if (error) throw new Error(error);
+        console.log(body);
+    //    TODO: programmatically get collection id's from swagger files
+    });
+}
+
+// collection to update
+var collection_uid = '25fce390-37e7-9656-3533-32acbd8ed340';
+
+getUpdateCollection(collection_uid);
