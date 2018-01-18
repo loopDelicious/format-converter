@@ -4,7 +4,8 @@
   "description": "A module to convert swagger 2.0 JSONs to Postman Collection Format v1",
   "main": "convert.js",
   "scripts": {
-    "test": "scripts/test.sh"
+    "test": "scripts/test.sh",
+    "convert-and-update": "scripts/convert-and-update.js"
   },
   "dependencies": {
     "jsface": "^2.4.9",

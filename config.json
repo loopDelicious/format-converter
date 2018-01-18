@@ -1,0 +1,46 @@
+{
+  "collection": [
+      {
+        "from": "sampleswagger",
+        "to": "pm2-sampleswagger",
+        "name": "Swagger Petstore",
+        "collection_uid": "1559979-117524b1-4b63-c805-2a71-778679983d40",
+        "collection_id": "117524b1-4b63-c805-2a71-778679983d40"
+      },
+      {
+        "from": "swagger2",
+        "to": "pm2-swagger2",
+        "name": "My API",
+        "collection_uid": "1559979-e7c5861b-44ac-b9aa-6c68-18a8bc4a20b0",
+        "collection_id": "e7c5861b-44ac-b9aa-6c68-18a8bc4a20b0"
+      },
+      {
+        "from": "swagger2-with-params",
+        "to": "pm2-swagger2-with-params",
+        "name": "Awesome Pets API",
+        "collection_uid": "1559979-fb76e641-ce47-5dc2-e234-e8eb0f8391e3",
+        "collection_id": "e7c5861b-44ac-b9aa-6c68-18a8bc4a20b0"
+      },
+      {
+        "from": "swagger-with-path",
+        "to": "pm2-swagger-with-path",
+        "name": "Swagger Petstore with path",
+        "collection_uid": "1559979-cbe7d1f0-1890-cb9a-0a29-a6a1ebdce669",
+        "collection_id": "e7c5861b-44ac-b9aa-6c68-18a8bc4a20b0"
+      },
+      {
+        "from": "swagger_aws",
+        "to": "pm2-swagger_aws",
+        "name": "API Gateway / Cognito Sample API",
+        "collection_uid": "1559979-0ac7b5db-05cd-554e-6b10-9b074cb0ada8",
+        "collection_id": "e7c5861b-44ac-b9aa-6c68-18a8bc4a20b0"
+      },
+      {
+        "from": "swagger_aws_2",
+        "to": "pm2-swagger_aws_2",
+        "name": "API Gateway / Cognito Sample API example 2",
+        "collection_uid": "1559979-9f13bce9-7a03-0d5e-dff1-c6dedb685fd5",
+        "collection_id": "e7c5861b-44ac-b9aa-6c68-18a8bc4a20b0"
+      }
+    ]
+}

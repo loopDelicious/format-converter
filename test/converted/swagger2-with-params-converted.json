@@ -1,0 +1,46 @@
+{
+    "id": "1d5421ce-eabc-47db-a7da-8388cde20d33",
+    "name": "Awesome Pets API",
+    "description": "My API",
+    "order": [],
+    "folders": [
+        {
+            "id": "42b81cbd-d54b-40b4-b222-ac9d80d7c54a",
+            "name": "owner",
+            "description": "Folder for owner",
+            "order": [
+                "1eb25a47-b621-47b0-a3c2-6ec80d9bc9e4"
+            ],
+            "collection_name": "Awesome Pets API",
+            "collection_id": "1d5421ce-eabc-47db-a7da-8388cde20d33",
+            "collection": "1d5421ce-eabc-47db-a7da-8388cde20d33"
+        }
+    ],
+    "timestamp": 1413302258635,
+    "synced": false,
+    "requests": [
+        {
+            "id": "1eb25a47-b621-47b0-a3c2-6ec80d9bc9e4",
+            "headers": "",
+            "url": "http:///owner/:ownerId/pet/:petId",
+            "pathVariables": {
+                "ownerId": "42",
+                "petId": "{{petId}}"
+            },
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [],
+            "rawModeData": null,
+            "dataMode": "params",
+            "description": "",
+            "descriptionFormat": "html",
+            "time": 1516225415171,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "1d5421ce-eabc-47db-a7da-8388cde20d33",
+            "synced": false,
+            "name": "Find pets belonging to a owner"
+        }
+    ]
+}

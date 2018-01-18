@@ -1,0 +1,56 @@
+{
+    "id": "29adaf8d-4863-4595-8599-33d416a4a200",
+    "name": "My API",
+    "description": "My API",
+    "order": [],
+    "folders": [
+        {
+            "id": "327d0dc8-f24e-4268-97ba-3f7c3de60152",
+            "name": "LoginAPI",
+            "description": "Folder for LoginAPI",
+            "order": [
+                "8c31b7ac-4e88-4c10-a049-bbfd0893952f"
+            ],
+            "collection_name": "My API",
+            "collection_id": "29adaf8d-4863-4595-8599-33d416a4a200",
+            "collection": "29adaf8d-4863-4595-8599-33d416a4a200"
+        }
+    ],
+    "timestamp": 1413302258635,
+    "synced": false,
+    "requests": [
+        {
+            "id": "8c31b7ac-4e88-4c10-a049-bbfd0893952f",
+            "headers": "Accept: application/json\nContent-Type: application/x-www-form-urlencoded\n",
+            "url": "http:///Authorization/LoginAPI",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [
+                {
+                    "key": "UserName",
+                    "value": "{{UserName}}",
+                    "type": "text",
+                    "enabled": true
+                },
+                {
+                    "key": "Password",
+                    "value": "{{Password}}",
+                    "type": "text",
+                    "enabled": true
+                }
+            ],
+            "rawModeData": null,
+            "dataMode": "urlencoded",
+            "description": "",
+            "descriptionFormat": "html",
+            "time": 1516225415172,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "29adaf8d-4863-4595-8599-33d416a4a200",
+            "synced": false,
+            "name": "Authenticates you to the system and produces a session token that will be used for future calls"
+        }
+    ]
+}

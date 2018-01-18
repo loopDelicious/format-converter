@@ -1,0 +1,104 @@
+{
+    "id": "8b1c809a-08df-463f-959b-b413627744fa",
+    "name": "Swagger Petstore with path",
+    "description": "This is a sample server Petstore server.  You can find out more about Swagger at <a href=\"http://swagger.io\">http://swagger.io</a> or on irc.freenode.net, #swagger.  For this sample, you can use the api key \"special-key\" to test the authorization filters",
+    "order": [],
+    "folders": [
+        {
+            "id": "b46b0d7d-f7f8-4214-97c2-12c6544e8e6e",
+            "name": "pet",
+            "description": "Folder for pet",
+            "order": [
+                "b63bc0f4-ed12-4ada-91a7-d9250ee7ca37",
+                "988ce567-bd11-4b07-bf85-322db04d2ef2",
+                "c1c0ae9c-4081-4f2d-a7e3-0250445da669"
+            ],
+            "collection_name": "Swagger Petstore with path",
+            "collection_id": "8b1c809a-08df-463f-959b-b413627744fa",
+            "collection": "8b1c809a-08df-463f-959b-b413627744fa"
+        }
+    ],
+    "timestamp": 1413302258635,
+    "synced": false,
+    "requests": [
+        {
+            "id": "b63bc0f4-ed12-4ada-91a7-d9250ee7ca37",
+            "headers": "Accept: application/xml, application/json\nContent-Type: application/xml\n",
+            "url": "http://petstore.swagger.io/v2/pet/:petId",
+            "pathVariables": {
+                "petId": "{{petId}}"
+            },
+            "preRequestScript": "",
+            "method": "GET",
+            "data": [],
+            "rawModeData": null,
+            "dataMode": "urlencoded",
+            "description": "Returns a single pet",
+            "descriptionFormat": "html",
+            "time": 1516225415167,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "8b1c809a-08df-463f-959b-b413627744fa",
+            "synced": false,
+            "name": "Find pet by ID"
+        },
+        {
+            "id": "988ce567-bd11-4b07-bf85-322db04d2ef2",
+            "headers": "Accept: application/xml, application/json\nContent-Type: application/x-www-form-urlencoded\n",
+            "url": "http://petstore.swagger.io/v2/pet/:petId",
+            "pathVariables": {
+                "petId": "{{petId}}"
+            },
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [
+                {
+                    "key": "name",
+                    "value": "{{name}}",
+                    "type": "text",
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "value": "{{status}}",
+                    "type": "text",
+                    "enabled": true
+                }
+            ],
+            "rawModeData": null,
+            "dataMode": "urlencoded",
+            "description": "",
+            "descriptionFormat": "html",
+            "time": 1516225415167,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "8b1c809a-08df-463f-959b-b413627744fa",
+            "synced": false,
+            "name": "Updates a pet in the store with form data"
+        },
+        {
+            "id": "c1c0ae9c-4081-4f2d-a7e3-0250445da669",
+            "headers": "Accept: application/xml, application/json\napi_key: {{api_key}}\n",
+            "url": "http://petstore.swagger.io/v2/pet/:petId",
+            "pathVariables": {
+                "petId": "{{petId}}"
+            },
+            "preRequestScript": "",
+            "method": "DELETE",
+            "data": [],
+            "rawModeData": null,
+            "dataMode": "params",
+            "description": "",
+            "descriptionFormat": "html",
+            "time": 1516225415168,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "8b1c809a-08df-463f-959b-b413627744fa",
+            "synced": false,
+            "name": "Deletes a pet"
+        }
+    ]
+}

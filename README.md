@@ -10,4 +10,4 @@ from [https://github.com/postmanlabs/swagger2-to-postman](https://github.com/pos
 
 ## Run converter
 
-    $ node script.js
+    $ npm run convert-and-update.js

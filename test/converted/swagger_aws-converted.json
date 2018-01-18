@@ -1,0 +1,51 @@
+{
+    "id": "0bce5387-0fc6-40aa-a87f-c199a9142bb0",
+    "name": "API Gateway / Cognito Sample API",
+    "description": "Pet store sample that uses Cognito Developer Authenticated Identities to generate credentials through a Java Lambda Function",
+    "order": [],
+    "folders": [
+        {
+            "id": "57753aff-56c2-47ed-9027-bfd7b1c1aedd",
+            "name": "users",
+            "description": "Folder for users",
+            "order": [
+                "a368a4ed-b82d-4b2f-b5d3-0cdac7896c95"
+            ],
+            "collection_name": "API Gateway / Cognito Sample API",
+            "collection_id": "0bce5387-0fc6-40aa-a87f-c199a9142bb0",
+            "collection": "0bce5387-0fc6-40aa-a87f-c199a9142bb0"
+        }
+    ],
+    "timestamp": 1413302258635,
+    "synced": false,
+    "requests": [
+        {
+            "id": "a368a4ed-b82d-4b2f-b5d3-0cdac7896c95",
+            "headers": "Accept: application/json\nContent-Type: application/json\n",
+            "url": "https://execute-api.us-east-1.amazonaws.com/users",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [],
+            "rawModeData": "New user details.",
+            "dataMode": "raw",
+            "description": "Creates a new user in the DynamoDB backend database and returns a set \nof temporary credentials to sign future requests.\n",
+            "descriptionFormat": "html",
+            "time": 1516225415173,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "0bce5387-0fc6-40aa-a87f-c199a9142bb0",
+            "synced": false,
+            "name": "Registers a new user",
+            "currentHelper": "awsSigV4",
+            "helperAttributes": {
+                "accessKey": "{{aws_access_key_id}}",
+                "secretKey": "{{aws_secret_access_key}}",
+                "region": "eu-west-1",
+                "service": "execute-api",
+                "saveHelper": true
+            }
+        }
+    ]
+}

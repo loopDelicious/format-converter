@@ -1,0 +1,51 @@
+{
+    "id": "4da814cd-6eaf-417a-a45b-9e0b17e9038c",
+    "name": "API Gateway / Cognito Sample API example 2",
+    "description": "Pet store sample that uses Cognito Developer Authenticated Identities to generate credentials through a Java Lambda Function",
+    "order": [],
+    "folders": [
+        {
+            "id": "019ec478-d880-4da9-b767-595fff8dbce2",
+            "name": "users",
+            "description": "Folder for users",
+            "order": [
+                "f226866b-575d-4918-beb1-e4b8f8b7657b"
+            ],
+            "collection_name": "API Gateway / Cognito Sample API example 2",
+            "collection_id": "4da814cd-6eaf-417a-a45b-9e0b17e9038c",
+            "collection": "4da814cd-6eaf-417a-a45b-9e0b17e9038c"
+        }
+    ],
+    "timestamp": 1413302258635,
+    "synced": false,
+    "requests": [
+        {
+            "id": "f226866b-575d-4918-beb1-e4b8f8b7657b",
+            "headers": "Accept: text/json\nContent-Type: application/json\n",
+            "url": "https://execute-api.us-east-1.amazonaws.com/users",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [],
+            "rawModeData": "New user details.",
+            "dataMode": "raw",
+            "description": "Creates a new user in the DynamoDB backend database and returns a set \nof temporary credentials to sign future requests.\n",
+            "descriptionFormat": "html",
+            "time": 1516225415174,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "4da814cd-6eaf-417a-a45b-9e0b17e9038c",
+            "synced": false,
+            "name": "Registers a new user",
+            "currentHelper": "awsSigV4",
+            "helperAttributes": {
+                "accessKey": "{{aws_access_key_id}}",
+                "secretKey": "{{aws_secret_access_key}}",
+                "region": "eu-west-1",
+                "service": "execute-api",
+                "saveHelper": true
+            }
+        }
+    ]
+}
